@@ -258,8 +258,7 @@ public class TransferManager {
         this(s3, executorService, true);
     }
 
-    public TransferManager(AmazonS3 s3, ThreadPoolExecutor threadPoolExecutor) {
-    	//this(s3, threadPoolExecutor, true);
+    public TransferManager(AmazonS3 s3, ThreadPoolExecutor threadPoolExecutor) {    	
     	this.s3 = s3;
         this.executorService = threadPoolExecutor;
         this.configuration = new TransferManagerConfiguration();
